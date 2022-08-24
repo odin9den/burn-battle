@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burn Battle</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+
+<body>
+  
+  <header class="header header--main">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header__inner">
+            <a class="header__logo" href="index.html"><img class="header__logo-img animate__animated animate__slideInDown" src="images/logo.png" alt="logo"></a>
+            <div class="stat">
+              <ul class="stat__list">
+                <li class="stat__list-item animate__animated animate__fadeInDown">
+                  <div class="s-d-flex s-ai-center"><span class="stat__list-icon"><img class="stat__list-icon__img" src="images/players-icon.svg" alt=""></span><span class="stat__list-icon__text s-ml-10">Remaining <br> Players</span></div>
+                  <div class="stat__list-item__devider"></div>
+                  <span class="stat__list-number"><h3 class="stat__list-title">10,000</h3></span>
+                </li>
+                <li class="stat__list-item animate__animated animate__fadeInDown">
+                  <span class="stat__list-icon"><img class="stat__list-icon__img" src="images/scrore-icon.svg" alt=""></span>
+                  <div class="stat__list-item__devider"></div>
+                  <span class="stat__list-number"><h3 class="stat__list-title">1,000,000</h3></span>
+                </li>
+                <li class="stat__list-item animate__animated animate__fadeInDown">
+                  <span class="stat__list-icon"><img class="stat__list-icon__img" src="images/infinite-icon.svg" alt=""></span>
+                  <div class="stat__list-item__devider"></div>
+                  <span class="stat__list-number"><h3 class="stat__list-title">150,000</h3></span>
+                </li>
+                <li class="stat__list-item animate__animated animate__fadeInDown">
+                  <span class="stat__list-icon"><img class="stat__list-icon__img" src="images/volume-icon.svg" alt=""></span>
+                </li>
+                <li class="stat__list-item animate__animated animate__fadeInDown">
+                  <span class="stat__list-icon"><img class="stat__list-icon__img" src="images/settings-icon.svg" alt=""></span>
+                </li>
+              </ul>
+            </div>
+            <div class="burger-menu">
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    
+    <section class="nft s-bg-img" style="background-image: url(images/main-bg.svg);">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="nft__inner-wrapper">
+              <div class="nft__filters-wrapper s-mb-20">
+                <div class="nft__nav">
+                  <a class="nft__back-btn" href="main.html">
+                    <div class="nft__back-btn__icon"><img class="nft__back-btn__img" src="images/arrow-left.svg" alt="arrow-left"></div>
+                    <h5 class="nft__back-btn__title">Back</h5>
+                  </a>
+                  <h2 class="nft__title s-txt-dark">MY NFT’S (<span class="nft__title-num">315</span>)</h2>
+                </div>
+                <div class="nft__filters">
+                  <div class="nft__filters-item animate__animated animate__fadeInDown">
+                    <h5 class="nft__filters-title">Rarity</h5>
+                    <div class="nft__filters-expand"><img class="nft__filters-expand__img" src="images/expand-icon.svg" alt=""></div>
+                    <ul class="nft__filters-list">
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Rarity 1</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Rarity 2</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Rarity 3</h5></li>
+                    </ul>
+                  </div>
+                  <div class="nft__filters-item animate__animated animate__fadeInDown">
+                    <h5 class="nft__filters-title">Colors</h5>
+                    <div class="nft__filters-expand"><img class="nft__filters-expand__img" src="images/expand-icon.svg" alt=""></div>
+                    <ul class="nft__filters-list">
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Colors 1</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Colors 2</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Colors 3</h5></li>
+                    </ul>
+                  </div>
+                  <div class="nft__filters-item animate__animated animate__fadeInDown">
+                    <h5 class="nft__filters-title">Sort By</h5>
+                    <div class="nft__filters-expand"><img class="nft__filters-expand__img" src="images/expand-icon.svg" alt=""></div>
+                    <ul class="nft__filters-list">
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Sort By 1</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Sort By 2</h5></li>
+                      <li class="nft__filters-list__item"><h5 class="nft__filters-list__item-title">Sort By 3</h5></li>
+                    </ul>
+                  </div>
+                  <div class="nft__filters-item animate__animated animate__fadeInDown">
+                    <div class="nft__filters-grid nft__filters-grid--four">
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                      <div class="nft__filters-grid-item"></div>
+                    </div>
+                    <div class="nft__filters-expand"><img class="nft__filters-expand__img" src="images/expand-icon.svg" alt=""></div>
+                    <ul class="nft__filters-list">
+                      <li class="nft__filters-list__item">
+                        <div class="nft__filters-grid nft__filters-grid--six">
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                          <div class="nft__filters-grid-item"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="nft__inner-scrollbar__track">
+                <div class="nft__inner-scrollbar__thumb"></div>
+              </div>
+              <div class="nft__inner">
+                <div class="nft__grid row row-cols-md-4 row-cols-2 s-mt-10 s-row-gap-s20">
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img1.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img2.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img3.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img4.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img5.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img6.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img7.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img8.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img1.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img2.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img3.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="nft__grid-item">
+                      <div class="nft__grid-photo"><img class="nft__grid-img" src="images/nft-grid-img4.png" alt=""></div>
+                      <h5 class="nft__grid-name s-txt-dark s-mt-20">name</h5>
+                      <div class="nft__grid-num s-txt-dark">#01203</div>
+                      <div class="nft__grid-btn s-mt-25"><h5 class="nft__grid-btn__title">info</h5></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="nav__list-wrapper">
+                <ul class="nav__list s-mb-s0">
+                  <li class="nav__list-item animate__animated animate__fadeInUp">
+                    <a class="nav__list-link" href="#"><h3 class="nav__list-link__title s-txt-nowrap">Leaderboard</h3></a>
+                  </li>
+                  <li class="nav__list-item animate__animated animate__fadeInUp">
+                    <a class="nav__list-link" href="#"><h3 class="nav__list-link__title s-txt-nowrap s-txt-white">MY NFT’S</h3></a>
+                  </li>
+                </ul>
+                <div class="nav__play">
+                  <div class="nav__play-bg"><img class="nav__play-img" src="images/play-bg.png" alt="" ></div>
+                  <div class="nav__play-title">
+                    <div class="s-txt-lg time">PLAY</div>
+                    <div class="s-txt-sm waiting">In Season 1</div>
+                  </div>
+                </div>
+                <ul class="nav__list">
+                  <li class="nav__list-item animate__animated animate__fadeInUp">
+                    <a class="nav__list-link" href="#"><h3 class="nav__list-link__title s-txt-nowrap">marketplace</h3></a>
+                  </li>
+                  <li class="nav__list-item animate__animated animate__fadeInUp">
+                    <a class="nav__list-link" href="#"><h3 class="nav__list-link__title s-txt-nowrap">Season 1</h3></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+  </main>
+  
+  <footer class="footer"></footer>
+  
+  <script src="js/main.min.js"></script>  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>

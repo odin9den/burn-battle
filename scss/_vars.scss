@@ -1,0 +1,133 @@
+// Colors map
+$colors: (
+	white: #ffffff,
+	purple: rgb(121, 1, 101),
+	black: rgba(#000, .5),
+	dark: #000,
+  dark-orange: #DA903F,
+);
+
+$body-color: #ffffff;
+$body-bg: #ffffff;
+
+// Section spacing
+$section-spacing: 50;
+
+// Responsive spacings
+$spacings: (
+	100: (xl: 100px, lg: 80px, md: 60px, sm: 50px),
+	90:  (xl: 90px,  lg: 70px, md: 60px, sm: 50px),
+	80:  (xl: 80px,  lg: 60px, md: 50px, sm: 40px),
+	70:  (xl: 70px,  lg: 60px, md: 50px, sm: 40px),
+	60:  (xl: 60px,  lg: 50px, md: 30px, sm: 20px),
+	50:  (xl: 50px,  lg: 40px, md: 30px, sm: 20px),
+	40:  (xl: 40px,  lg: 30px, md: null, sm: 20px),
+	30:  (xl: null,  lg: 30px, md: null, sm: 20px),
+	25:  (xl: null,  lg: null, md: null, sm: 25px),
+	20:  (xl: null,  lg: null, md: null, sm: 20px),
+	15:  (xl: null,  lg: null, md: null, sm: 15px),
+	10:  (xl: null,  lg: null, md: null, sm: 10px),
+	5:   (xl: null,  lg: null, md: null, sm: 5px),
+	0:   (xl: null,  lg: null, md: null, sm: 0)
+);
+
+// Bootstrap grid
+$grid-columns: 24;
+$grid-gutter-width: 20px;
+$grid-row-columns: 12;
+$grid-breakpoints: (sm: 0, md: 768px, lg: 992px, xl: 1240px);
+$container-max-widths: (md: 748px, lg: 972px, xl: 1440px);
+
+$enable-grid-classes: true;
+
+// Fonts list
+$fonts: (
+	('Mont', 'Mont-Regular', 400, woff2 woff ttf),
+	('Mont', 'Mont-Heavy', 900, woff2 woff ttf),
+	('Mont-Italic', 'Mont-Regular-Italic', 400, woff2 woff ttf)
+);
+
+// Base
+$font-family-base: 'Mont', sans-serif;
+$font-size-base: (xl: 18px, lg: null, md: null, sm: 16px);
+$line-height-base: 1.2;
+$font-weight-base: 400;
+$font-weight-bold: 900;
+
+// Heading base
+$font-family-heading: $font-family-base;
+$line-height-heading: 1.2;
+$font-weight-heading: $font-weight-bold;
+$text-transform-heading: null;
+
+// Heading maps
+$heading: (
+	h2: (
+		font-family: $font-family-heading,
+		font-size: (xl: 30px, lg: 28px, md: 26px, sm: 22px),
+		line-height: $line-height-heading,
+		font-weight: $font-weight-heading,
+		text-transform: $text-transform-heading,
+		margin-bottom: (xl: null, lg: null, md: null, sm: null)
+	),
+	h3: (
+		font-family: $font-family-heading,
+		font-size: (xl: 24px, lg: 22px, md: 20px, sm: 18px),
+		line-height: $line-height-heading,
+		font-weight: $font-weight-heading,
+		text-transform: uppercase,
+		margin-bottom: (xl: null, lg: null, md: null, sm: null)
+	),
+	h4: (
+		font-family: $font-family-heading,
+		font-size: (xl: null, lg: null, md: null, sm: null),
+		line-height: $line-height-heading,
+		font-weight: $font-weight-heading,
+		text-transform: $text-transform-heading,
+		margin-bottom: (xl: null, lg: null, md: null, sm: null)
+	),
+	h5: (
+		font-family: $font-family-heading,
+		font-size: (xl: 16px, lg: null, md: 12px, sm: null),
+		line-height: $line-height-heading,
+		font-weight: $font-weight-heading,
+		text-transform: uppercase,
+		margin-bottom: (xl: null, lg: null, md: null, sm: null)
+	)
+);
+
+
+// Special text maps
+$special-text: (
+	lg: (
+		font-size: (xl: 64px, lg: 42px, md: 36px, sm: 24px),
+		font-weight: 900,
+		line-height: 0.9
+	),
+	md: (
+		font-size: (xl: null, lg: null, md: null, sm: null),
+		line-height: null
+	),
+	sm: (
+		font-size: (xl: 14px, lg: null, md: 12px, sm: null),
+		font-weight: 400,
+		line-height: null
+	)
+);
+
+// Paragraph
+$paragraph-margin: $line-height-base + em;
+
+// List
+$list-margin: $line-height-base + em;
+
+// Link
+$link-color: $body-color;
+$link-decoration: underline;
+$link-hover-color: $body-color;
+$link-hover-decoration: none;
+
+// List
+$list-indent: 1.2em;
+$list-bullet-radius: 6px;
+$list-bullet-color: $body-color;

@@ -1,0 +1,125 @@
+@import "utilities";
+
+html,
+body {
+	height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+/*! purgecss start ignore */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+/*! purgecss end ignore */
+
+body {
+	margin: 0;
+	font-family: $font-family-base;
+	@include mq((
+	font-size: ($font-size-base)
+	));
+	line-height: $line-height-base;
+	font-weight: $font-weight-base;
+	color: $body-color;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	background-color: $body-bg;
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+@each $key, $settings in $heading {
+	#{$key} {
+		@each $key, $prop in $settings {
+			@if (type-of($prop) == map ) {
+				@include mq((#{$key}: ($prop)));
+			} @else {
+				#{$key}: $prop;
+			}
+		}
+	}
+}
+
+sub, sup {
+	position: relative;
+	font-size: 0.75em;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+sub { bottom: -.25em; }
+sup { top: -.5em; }
+
+b, strong {
+	font-weight: $font-weight-bold;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: $paragraph-margin;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	transition: all .25s ease;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+	&:active, &:hover {
+		outline: 0;
+	}
+}
+
+ul,ol {
+	margin-left: $list-indent;
+	margin-bottom: $list-margin;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+img {
+	display: inline-block;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+img,svg,audio,video { max-width: 100%; height: auto; }
+audio,canvas,iframe,video,img,svg { vertical-align: middle; }
+iframe { border: 0 }
+
+section {
+	position: relative;
+}
+
+[class|='container'] {
+	@include mq((padding-left: (xl: 60px !important, lg: 30px !important, sm: 20px)));
+	@include mq((padding-right: (xl: 60px !important, lg: 30px !important, sm: 20px)));
+}
